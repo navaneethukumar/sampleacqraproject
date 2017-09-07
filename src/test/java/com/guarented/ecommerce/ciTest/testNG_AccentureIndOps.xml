@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Automation-Regression-Report" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+	
+	<!-- <listener class-name="com.spire.base.reporter.SpireReport"/>
+	<listener class-name="com.spire.base.reporter.SpireEmailReport"/> -->
+	
+	<listener class-name="com.spire.acqura2.report.SpireReport"/>
+	<listener class-name="com.spire.acqura2.report.SpireEmailReport"/>
+	<listener class-name="com.spire.base.controller.TestRetryListener"/>
+	<listener class-name="com.spire.acqura2.report.SpireReportChart"/>
+	
+	</listeners>
+	
+	
+	<parameter name="host" value="https://ind-ops-new.spire2grow.com/generic-ui/src/app/index.html" />
+	<parameter name="userId" value="recruiter@accopsuat.com"/>
+    <parameter name="password" value="G3tGGbGt"/>
+	
+	<!--instance names Accenture,CTS -->
+	<!-- <parameter name="instance" value="AccentureIndOps" /> -->
+	<parameter name="client" value="AccentureIndOps" />
+	<!--browser values of *Firefox,Chrome,IE -->
+	<parameter name="browser" value="Chrome" />
+	<parameter name="healthCheck" value="false" />
+	
+	<test name="Accenture-SMOKE-TestPlan">
+		<groups>
+			<run>
+				<include name="Sanity" />
+				<include name="sanity" />
+				
+				
+				
+			</run>
+		</groups>
+		<packages>
+		    
+			<package name="com.spire.acqura2.test.login" />
+			<package name="com.spire.acqura2.test.homePage" />
+		    <package name="com.spire.acqura2.test.universalSearch" />
+		    <package name="com.spire.acqura2.test.advancedSearch" />
+		    <package name="com.spire.acqura2.test.candidateListView" />
+		    <package name="com.spire.acqura2.test.CandidateProfilePage" />
+		    <package name="com.spire.acqura2.test.manageSaveSearch" />
+		    
+			
+		</packages>
+	</test>
+	
+	
+		
+</suite>

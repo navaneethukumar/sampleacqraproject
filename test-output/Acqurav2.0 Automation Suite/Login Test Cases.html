@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  Login Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Login Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 01 17:10:23 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>47 seconds (47348 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>validateLoginPageScreen validateLogout validateLogin </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.spire.acqura2.test.accenture.login.loginTestPlan.validateLogin()'><b>validateLogin</b><br>Test class: com.spire.acqura2.test.accenture.login.loginTestPlan<br>Parameters: [TestCaseId=2|TestTitle=validateLogin], com.spire.acqura2.pojo.User@74f80ce9<br/>
+<a href="#Output-1848262676" onClick='toggleBox("Output-1848262676", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1848262676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1848262676">
+Initializing the driver<br/>
+Getting Role for the test case<br/>
+Getting Role for the test case<br/>
+Entering the Logging Details<br/>
+Getting UserName from Csv File<br/>
+Entering the Username<br/>
+Getting Password from Csv File<br/>
+Entering the Password<br/>
+filled details and clicking on submit<br/>
+Checking Popular Pool Label in Home Page<br/>
+Checking Open Requisition Label in Home Page<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.spire.acqura2.test.accenture.login.loginTestPlan@26f67b76</td></tr>
+<tr>
+<td title='com.spire.acqura2.test.accenture.login.loginTestPlan.validateLoginPageScreen()'><b>validateLoginPageScreen</b><br>Test class: com.spire.acqura2.test.accenture.login.loginTestPlan<br>Parameters: [TestCaseId=1|TestTitle=validateLoginPageScreen], com.spire.acqura2.pojo.User@40a3b46b<br/>
+<a href="#Output-1561017455" onClick='toggleBox("Output-1561017455", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1561017455" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1561017455">
+Initializing the driver<br/>
+Checking TextMsg in Login Page<br/>
+Checking UserName in Login Page<br/>
+Checking Password in Login Page<br/>
+Checking Submit button in Login Page<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.spire.acqura2.test.accenture.login.loginTestPlan@26f67b76</td></tr>
+<tr>
+<td title='com.spire.acqura2.test.accenture.login.loginTestPlan.validateLogout()'><b>validateLogout</b><br>Test class: com.spire.acqura2.test.accenture.login.loginTestPlan<br>Parameters: [TestCaseId=3|TestTitle=validateLogout], com.spire.acqura2.pojo.User@1bf6b5a4<br/>
+<a href="#Output-1950282637" onClick='toggleBox("Output-1950282637", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1950282637" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1950282637">
+Initializing the driver<br/>
+Getting Role for the test case<br/>
+Getting Role for the test case<br/>
+Entering the Logging Details<br/>
+Getting UserName from Csv File<br/>
+Entering the Username<br/>
+Getting Password from Csv File<br/>
+Entering the Password<br/>
+filled details and clicking on submit<br/>
+Logging out<br/>
+Validating logout happened or not<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>com.spire.acqura2.test.accenture.login.loginTestPlan@26f67b76</td></tr>
+</table><p>
+</body>
+</html>

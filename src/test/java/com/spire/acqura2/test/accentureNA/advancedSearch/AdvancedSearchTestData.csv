@@ -1,0 +1,7 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,User.role
+1,verifyAllFieldsInAdvancedSearchScreen,NARECRUITER
+2,searchMultipleSkillWithAndCombination,NARECRUITER
+3,searchMultipleSkillWithORCombination,NARECRUITER
+4,searchBySkillandExperienceCombination,NARECRUITER
+5,searchByAtasId,NARECRUITER
+6,searchSkillWithSourceCombination,NARECRUITER

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Spire Automation Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body bgcolor="#E6E6FA"><div class="center"><center><img src="http://www.spire2grow.com/main/sites/default/files/Spire%20logo%20unit%20_black_250_1.png"></center> <center><h1><font color="Grey">Spire Automation Report - 2016-07-21 03:28:35 AM</h1></center><center><table><tr><th>Test</th><th>Total Tests </th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Time Taken (Seconds)</th><th>Pass % </th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Acqura2.0 Automation Suite</th></tr><tr><td><a href="#t0">Home Page Test Cases</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">105.74</td><td class="num">0%</td><td>searchBySkillandExperienceCombination</td><td></td></tr><tr><th>Total</th><td class="num">1</td><th class="num">0</th><th class="num attn">1</th><th class="num">0</th><th class="num">105.74</th><td class="num">0%</td><th colspan="2"></th></tr></table></center><center><table><thead><tr><th>Class</th><th>Method</th><th>Name</th><th>Start</th><th>Seconds</th></tr></thead><tbody><tr><th colspan="5">Acqura2.0 Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="5">Home Page Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan</td><td><a href="#m0">searchBySkillandExperienceCombination</a></td><td rowspan="1">searchBySkillandExperienceCombination</td><td rowspan="1">03:27:42 AM</td><td rowspan="1">50.33</td></tr></tbody></table><center><h2>Home Page Test Cases</h2><h3 id="m0">com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan#searchBySkillandExperienceCombination ( searchBySkillandExperienceCombination )</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>[TestCaseId=4|TestTitle=searchBySkillandExperienceCombination]</td><td>com.spire.acqura2.pojo.User@4f027364</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">Initializing the driver<br/>Getting Role for the test case<br/>Getting Role for the test case<br/>Getting Role for the test case<br/>Getting Role for the test case<br/>Entering the Logging Details<br/>Getting UserName from Property File<br/>Entering the Username<br/>Getting Password from Property File<br/>Entering the Password<br/>filled details and clicking on submit</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for presence of element located by: By.xpath: //button[contains(text(),&apos;Advanced&apos;)]
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;LAP-064-HB12&apos;, ip: &apos;172.16.0.150&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\RAHULK~1\AppData\Local\Temp\scoped_dir2912_31573}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dd3128980a44df2b7cee16ea9eae7754
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.spire.acqura2.commonUtils.CommonUtils.explicitWait(CommonUtils.java:108)
+	at com.spire.acqura2.pages.HomePage.clickAdvancedSearchLink(HomePage.java:93)
+	at com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan.searchBySkillandExperienceCombination(AdvancedSearchTestPlan.java:132)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=51.0.2704.103)
+  (Driver info: chromedriver=2.14.313457 (3d645c400edf2e2c500566c9aa096063e707c9cf),platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.48.2&apos;, revision: &apos;41bccdd10cf2c0560f637404c2d96164b67d9d67&apos;, time: &apos;2015-10-09 13:08:06&apos;
+System info: host: &apos;LAP-064-HB12&apos;, ip: &apos;172.16.0.150&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\RAHULK~1\AppData\Local\Temp\scoped_dir2912_31573}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, version=51.0.2704.103, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: dd3128980a44df2b7cee16ea9eae7754
+*** Element info: {Using=xpath, value=//button[contains(text(),&apos;Advanced&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:647)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:490)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:345)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:181)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:178)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 23 more
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></div></body></html>

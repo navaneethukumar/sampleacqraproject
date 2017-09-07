@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Automation-Regression-Report" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+	
+	<!--<listener class-name="com.spire.base.reporter.SpireReport"/>
+	<listener class-name="com.spire.base.reporter.SpireEmailReport"/>-->
+	
+	<listener class-name="com.spire.acqura2.report.SpireReport"/>
+	<listener class-name="com.spire.acqura2.report.SpireEmailReport"/>
+	<listener class-name="com.spire.base.controller.TestRetryListener"/>
+	<listener class-name="com.spire.acqura2.report.SpireReportChart"/>
+	
+	</listeners>
+	
+	
+	<parameter name="host" value="https://accentureidc.spire2grow.com" />
+	<!--instance names Accenture,CTS -->
+	<parameter name="instance" value="Accenture" />
+	<!--browser values of *Firefox,Chrome,IE -->
+	<parameter name="browser" value="Chrome" />
+	<parameter name="healthCheck" value="false" />
+	
+	<test name="Accenture-SMOKE-TestPlan">
+		<groups>
+			<run>
+				<include name="getAutomatchReport" />
+				
+				
+			</run>
+		</groups>
+		<packages>
+		   <package name="com.spire.scripts" />			
+		</packages>
+	</test>
+	
+	
+		
+</suite>

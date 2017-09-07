@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Acqurav2.0 Automation Suite]" parallel="tests">
+  <parameter name="instance" value="ACCENTURE"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="healthCheck" value="false"/>
+  <parameter name="host" value="http://192.168.2.4:3000/"/>
+  <listeners>
+    <listener class-name="com.spire.base.reporter.SpireReport"/>
+    <listener class-name="com.spire.base.controller.TestRetryListener"/>
+  </listeners>
+  <test name="Login-Logout Test Cases(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="validateLoginPageScreen"/>
+        <include name="validateLogin"/>
+        <include name="validateLogout"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.spire.acqura2.test.accenture.login.loginTestPlan">
+        <methods>
+          <include name="afterTestMethod"/>
+          <include name="afterTestSuite"/>
+          <include name="validateLogout" invocation-numbers="0 0"/>
+          <include name="validateLogin" invocation-numbers="0 0"/>
+          <include name="beforeTestSuite"/>
+          <include name="validateLoginPageScreen" invocation-numbers="0 0"/>
+          <include name="beforeTest"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.spire.acqura2.test.accenture.login.loginTestPlan -->
+    </classes>
+  </test> <!-- Login-Logout Test Cases(failed) -->
+</suite> <!-- Failed suite [Acqurav2.0 Automation Suite] -->

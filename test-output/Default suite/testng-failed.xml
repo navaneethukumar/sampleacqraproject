@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.spire.acqura2.test.accenture.home.homeTestPlan">
+        <methods>
+          <include name="afterTestMethod"/>
+          <include name="afterTestSuite"/>
+          <include name="validatePopularPoolCountClick"/>
+          <include name="validateAutoSuggestionInUniversalSearch"/>
+          <include name="validateDefaultSRStatusInResultGrid"/>
+          <include name="beforeTestSuite"/>
+          <include name="validateSRStatusListInDropDown"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.spire.acqura2.test.accenture.home.homeTestPlan -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

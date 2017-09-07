@@ -1,0 +1,4 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,User.role
+1,validatePingMachine,recruiter
+2,validateLogin,recruiter
+3,validateUniversalSearchBySkill,recruiter

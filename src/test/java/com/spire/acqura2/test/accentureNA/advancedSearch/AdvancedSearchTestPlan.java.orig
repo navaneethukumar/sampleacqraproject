@@ -1,0 +1,139 @@
+package com.spire.acqura2.test.accentureNA.advancedSearch;
+
+import java.lang.reflect.Method;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.spire.acqura2.constants.SpireConstants;
+import com.spire.acqura2.pageUtils.AdvancedSearchPageUtilsNA;
+import com.spire.acqura2.pageUtils.CandidateListViewUtils;
+import com.spire.acqura2.pageUtils.HomePageUtils;
+import com.spire.acqura2.pageUtils.LoginPageUtils;
+import com.spire.acqura2.pojo.User;
+import com.spire.acqura2.test.accenture.candidateListView.candidateListViewTestPlan;
+import com.spire.base.controller.TestPlan;
+import com.spire.base.controller.TestRetryAnalyzer;
+import com.spire.base.util.SpireCsvUtil;
+import com.spire.base.util.internal.entity.SpireTestObject;
+
+/**
+ * @author Radharani Patra 20/07/2016
+ */
+
+@Test(groups = { "advancedSearchTest" }, retryAnalyzer = TestRetryAnalyzer.class)
+public class AdvancedSearchTestPlan extends TestPlan {
+
+	HomePageUtils homePgUtils = null;
+	AdvancedSearchPageUtilsNA advanceSrchPageUtils = null;
+	CandidateListViewUtils candListViewUtils = new CandidateListViewUtils(driver);
+
+	@DataProvider(name = "AdvancedSearchTestData")
+	public static Iterator<Object[]> getCandidateInfo(Method method) {
+
+		Iterator<Object[]> objectsFromCsv = null;
+
+		try {
+			String fileName = "./src/test/java/com/spire/acqura2/test/accentureNA/advancedSearch/AdvancedSearchTestData.csv";
+			LinkedHashMap<String, Class<?>> entityClazzMap = new LinkedHashMap<String, Class<?>>();
+			LinkedHashMap<String, String> methodFilter = new LinkedHashMap<String, String>();
+			methodFilter.put(SpireTestObject.TEST_TITLE, method.getName());
+			entityClazzMap.put("SpireTestObject", SpireTestObject.class);
+			entityClazzMap.put("User", User.class);
+			objectsFromCsv = SpireCsvUtil.getObjectsFromCsv(candidateListViewTestPlan.class, entityClazzMap, fileName,
+					null, methodFilter);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return objectsFromCsv;
+	}
+
+	/**
+	 * Flow:1. Login to application 2. Click on Advanced link 3. Navigate to
+	 * Advanced Search page Verify all the elements present in Advanced Search
+	 * Screen
+	 * 
+	 * @throws Exception
+	 */
+	@Test(groups = { "verifyAllFieldsInAdvancedSearchScreen", "sanity" }, dataProvider = "AdvancedSearchTestData")
+	public void verifyAllFieldsInAdvancedSearchScreen(SpireTestObject testObject, User user) throws Exception {
+
+		LoginPageUtils loginPageUtils = new LoginPageUtils(null, true);
+		initializeDriver(loginPageUtils.driver, testObject);
+		loginPageUtils.signin(user);
+		homePgUtils = new HomePageUtils(driver);
+		homePgUtils.clickAdvancedSearchLink();
+		advanceSrchPageUtils = new AdvancedSearchPageUtilsNA(driver);
+		advanceSrchPageUtils.verifyNavigationToAdvancedSearchPage();
+		advanceSrchPageUtils.verifyAllFields();
+	}
+	
+	/**
+	 * Flow:1. Login to application 2. Click on Advanced link 3. Navigate to
+	 * Advanced Search page 3. Search multiple skills with AND combination
+	 * Verify the result
+	 * 
+	 * @throws Exception
+	 */
+	@Test(groups = { "searchMultipleSkillWithAndCombination", "sanity" }, dataProvider = "AdvancedSearchTestData")
+	public void searchMultipleSkillWithAndCombination(SpireTestObject testObject, User user) throws Exception {
+
+		LoginPageUtils loginPageUtils = new LoginPageUtils(null, true);
+		initializeDriver(loginPageUtils.driver, testObject);
+		loginPageUtils.signin(user);
+		homePgUtils = new HomePageUtils(driver);
+		homePgUtils.clickAdvancedSearchLink();
+		advanceSrchPageUtils = new AdvancedSearchPageUtilsNA(driver);
+		advanceSrchPageUtils.enterMultipleSkillsWithOperator(SpireConstants.SKILL_TO_SEARCH,SpireConstants.AND_OPERATOR,SpireConstants.SKILL_TWO);
+		advanceSrchPageUtils.clickSearchButton();
+		candListViewUtils.verifyNavigationToCandidateListPage();
+		candListViewUtils.verifySearchresultDivisionText(SpireConstants.SKILL_TO_SEARCH,SpireConstants.AND_OPERATOR,SpireConstants.SKILL_TWO);
+		//candListViewUtils.verifySkillsCheckedInRefineSearch(SpireConstants.SKILL_TO_SEARCH,SpireConstants.SKILL_TWO);
+	}
+	
+
+	/**
+	 * Flow:1. Login to application 2. Click on Advanced link 3. Navigate to
+	 * Advanced Search page 3. Search multiple skills with OR combination
+
+	 * Verify the result
+	 * 
+	 * @throws Exception
+	 */
+
+	@Test(groups = { "searchMultipleSkillWithORCombination", "sanity" }, dataProvider = "AdvancedSearchTestData")
+	public void searchMultipleSkillWithORCombination(SpireTestObject testObject, User user) throws Exception {
+		LoginPageUtils loginPageUtils = new LoginPageUtils(null, true);
+		initializeDriver(loginPageUtils.driver, testObject);
+		loginPageUtils.signin(user);
+		homePgUtils = new HomePageUtils(driver);
+		homePgUtils.clickAdvancedSearchLink();
+		advanceSrchPageUtils = new AdvancedSearchPageUtilsNA(driver);
+		advanceSrchPageUtils.enterMultipleSkillsWithOperator(SpireConstants.SKILL_TO_SEARCH,SpireConstants.OR_OPERATOR,SpireConstants.SKILL_THREE);
+		advanceSrchPageUtils.clickSearchButton();
+		candListViewUtils.verifyNavigationToCandidateListPage();		
+}
+
+/**
+	 * Flow:1. Login to application 2. Click on Advanced link 3. Navigate to
+	 * Advanced Search page 3. Search Candidate by Atas Id
+	 * Verify the result
+	 * 
+	 * @throws Exception
+	 */
+	@Test(groups = { "searchByAtasId", "sanity" }, dataProvider = "AdvancedSearchTestData")
+	public void searchByAtasId(SpireTestObject testObject, User user) throws Exception {
+
+		LoginPageUtils loginPageUtils = new LoginPageUtils(null, true);
+		initializeDriver(loginPageUtils.driver, testObject);
+		loginPageUtils.signin(user);
+		homePgUtils = new HomePageUtils(driver);
+		homePgUtils.clickAdvancedSearchLink();
+		advanceSrchPageUtils = new AdvancedSearchPageUtilsNA(driver);
+		advanceSrchPageUtils.searchByAtasId(SpireConstants.ATASID_TO_SEARCH);
+		advanceSrchPageUtils.clickCandidateSearch();
+		
+	}
+}

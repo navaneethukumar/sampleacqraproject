@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Initializing the driver]]>
+    </line>
+    <line>
+      <![CDATA[Getting Role for the test case]]>
+    </line>
+    <line>
+      <![CDATA[Getting Role for the test case]]>
+    </line>
+    <line>
+      <![CDATA[Getting Role for the test case]]>
+    </line>
+    <line>
+      <![CDATA[Getting Role for the test case]]>
+    </line>
+    <line>
+      <![CDATA[Entering the Logging Details]]>
+    </line>
+    <line>
+      <![CDATA[Getting UserName from Property File]]>
+    </line>
+    <line>
+      <![CDATA[Entering the Username]]>
+    </line>
+    <line>
+      <![CDATA[Getting Password from Property File]]>
+    </line>
+    <line>
+      <![CDATA[Entering the Password]]>
+    </line>
+    <line>
+      <![CDATA[filled details and clicking on submit]]>
+    </line>
+    <line>
+      <![CDATA[Advanced Search link is clicked.]]>
+    </line>
+    <line>
+      <![CDATA[skill entered: Java]]>
+    </line>
+    <line>
+      <![CDATA[skill selected: Java]]>
+    </line>
+    <line>
+      <![CDATA[Search button clicked]]>
+    </line>
+  </reporter-output>
+  <suite name="Acqura2.0 Automation Suite" duration-ms="65836" started-at="2016-07-21T13:37:09Z" finished-at="2016-07-21T13:38:15Z">
+    <groups>
+      <group name="advancedSearchTest">
+        <method signature="AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject, com.spire.acqura2.pojo.User)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="searchBySkillandExperienceCombination" class="com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan"/>
+      </group> <!-- advancedSearchTest -->
+      <group name="sanity">
+        <method signature="AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject, com.spire.acqura2.pojo.User)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="searchBySkillandExperienceCombination" class="com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan"/>
+      </group> <!-- sanity -->
+      <group name="searchBySkillandExperienceCombination">
+        <method signature="AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject, com.spire.acqura2.pojo.User)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="searchBySkillandExperienceCombination" class="com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan"/>
+      </group> <!-- searchBySkillandExperienceCombination -->
+    </groups>
+    <test name="Home Page Test Cases" duration-ms="65836" started-at="2016-07-21T13:37:09Z" finished-at="2016-07-21T13:38:15Z">
+      <class name="com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan">
+        <test-method status="PASS" signature="beforeTestSuite(org.testng.ITestContext)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="beforeTestSuite" is-config="true" duration-ms="33" started-at="2016-07-21T19:07:09Z" finished-at="2016-07-21T19:07:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@553f17c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSuite -->
+        <test-method status="PASS" signature="beforeTest(org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="beforeTest" is-config="true" duration-ms="15" started-at="2016-07-21T19:07:09Z" finished-at="2016-07-21T19:07:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@553f17c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Test: "Home Page Test Cases" verbose:1[parameters:][metagroups:] [included: searchBySkillandExperienceCombination ][excluded: ]  classes:[XmlClass class=com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan]  packages:org.testng.xml.XmlPackage@641c95b ] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="setUp" is-config="true" duration-ms="0" started-at="2016-07-21T19:07:09Z" finished-at="2016-07-21T19:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeTestMethod([Ljava.lang.Object;, java.lang.reflect.Method, org.testng.ITestContext, org.testng.xml.XmlTest)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="beforeTestMethod" is-config="true" duration-ms="0" started-at="2016-07-21T19:07:09Z" finished-at="2016-07-21T19:07:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4f7d0008]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject,com.spire.acqura2.pojo.User) throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@553f17c]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[Test: "Home Page Test Cases" verbose:1[parameters:][metagroups:] [included: searchBySkillandExperienceCombination ][excluded: ]  classes:[XmlClass class=com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan]  packages:org.testng.xml.XmlPackage@641c95b ] ]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method status="PASS" signature="searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject, com.spire.acqura2.pojo.User)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="searchBySkillandExperienceCombination" duration-ms="62772" started-at="2016-07-21T19:07:09Z" data-provider="AdvancedSearchTestData" finished-at="2016-07-21T19:08:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestCaseId=4|TestTitle=searchBySkillandExperienceCombination]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[com.spire.acqura2.pojo.User@1dfcc589]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Initializing the driver]]>
+            </line>
+            <line>
+              <![CDATA[Getting Role for the test case]]>
+            </line>
+            <line>
+              <![CDATA[Getting Role for the test case]]>
+            </line>
+            <line>
+              <![CDATA[Getting Role for the test case]]>
+            </line>
+            <line>
+              <![CDATA[Getting Role for the test case]]>
+            </line>
+            <line>
+              <![CDATA[Entering the Logging Details]]>
+            </line>
+            <line>
+              <![CDATA[Getting UserName from Property File]]>
+            </line>
+            <line>
+              <![CDATA[Entering the Username]]>
+            </line>
+            <line>
+              <![CDATA[Getting Password from Property File]]>
+            </line>
+            <line>
+              <![CDATA[Entering the Password]]>
+            </line>
+            <line>
+              <![CDATA[filled details and clicking on submit]]>
+            </line>
+            <line>
+              <![CDATA[Advanced Search link is clicked.]]>
+            </line>
+            <line>
+              <![CDATA[skill entered: Java]]>
+            </line>
+            <line>
+              <![CDATA[skill selected: Java]]>
+            </line>
+            <line>
+              <![CDATA[Search button clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchBySkillandExperienceCombination -->
+        <test-method status="PASS" signature="afterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="afterTestMethod" is-config="true" duration-ms="3033" started-at="2016-07-21T19:08:12Z" finished-at="2016-07-21T19:08:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject,com.spire.acqura2.pojo.User) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="afterMethod" is-config="true" duration-ms="0" started-at="2016-07-21T19:08:12Z" finished-at="2016-07-21T19:08:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchBySkillandExperienceCombination status=SUCCESS method=AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject, com.spire.acqura2.pojo.User)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004] output=Initializing the driver]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="_takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="_takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2016-07-21T19:08:12Z" finished-at="2016-07-21T19:08:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchBySkillandExperienceCombination status=SUCCESS method=AdvancedSearchTestPlan.searchBySkillandExperienceCombination(com.spire.base.util.internal.entity.SpireTestObject, com.spire.acqura2.pojo.User)[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004] output=Initializing the driver]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- _takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="afterTestSuite()[pri:0, instance:com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan@b97c004]" name="afterTestSuite" is-config="true" duration-ms="0" started-at="2016-07-21T19:08:15Z" finished-at="2016-07-21T19:08:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestSuite -->
+      </class> <!-- com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan -->
+    </test> <!-- Home Page Test Cases -->
+  </suite> <!-- Acqura2.0 Automation Suite -->
+</testng-results>

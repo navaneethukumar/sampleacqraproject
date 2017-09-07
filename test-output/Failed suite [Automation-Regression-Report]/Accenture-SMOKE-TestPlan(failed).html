@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  Accenture-SMOKE-TestPlan(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Accenture-SMOKE-TestPlan(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jun 17 15:55:36 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>60 seconds (60304 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>smoke sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.spire.acqura2.test.accenture.home.homeTestPlan.validatePopularPoolCountClick()'><b>validatePopularPoolCountClick</b><br>Test class: com.spire.acqura2.test.accenture.home.homeTestPlan<br>Parameters: [TestCaseId=4|TestTitle=validatePopularPoolCountClick], com.spire.acqura2.pojo.User@1d8724a0<br/>
+<a href="#Output-1797482869" onClick='toggleBox("Output-1797482869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1797482869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1797482869">
+Initializing the driver<br/>
+Getting Role for the test case<br/>
+Getting Role for the test case<br/>
+Entering the Logging Details<br/>
+Getting UserName from Property File<br/>
+Entering the Username<br/>
+Getting Password from Property File<br/>
+Entering the Password<br/>
+filled details and clicking on submit<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Popular Pool Not found expected [true] but found [false]
+	at com.spire.base.controller.Assertion.assertTrue(Assertion.java:178)
+	at com.spire.acqura2.pageUtils.HomePageUtils.validatePopularPoolCountClick(HomePageUtils.java:124)
+	at com.spire.acqura2.test.accenture.home.homeTestPlan.validatePopularPoolCountClick(homeTestPlan.java:84)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1797482869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1797482869'><pre>java.lang.AssertionError: Popular Pool Not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.spire.base.controller.Assertion.assertTrue(Assertion.java:178)
+	at com.spire.acqura2.pageUtils.HomePageUtils.validatePopularPoolCountClick(HomePageUtils.java:124)
+	at com.spire.acqura2.test.accenture.home.homeTestPlan.validatePopularPoolCountClick(homeTestPlan.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:696)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:882)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1189)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>37</td>
+<td>com.spire.acqura2.test.accenture.home.homeTestPlan@458ad742</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.spire.acqura2.test.accenture.home.homeTestPlan.validateSRStatusListInDropDown()'><b>validateSRStatusListInDropDown</b><br>Test class: com.spire.acqura2.test.accenture.home.homeTestPlan<br>Parameters: [TestCaseId=2|TestTitle=validateSRStatusListInDropDown], com.spire.acqura2.pojo.User@3e78c925<br/>
+<a href="#Output-1334953254" onClick='toggleBox("Output-1334953254", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1334953254" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1334953254">
+Initializing the driver<br/>
+Getting Role for the test case<br/>
+Getting Role for the test case<br/>
+Entering the Logging Details<br/>
+Getting UserName from Property File<br/>
+Entering the Username<br/>
+Getting Password from Property File<br/>
+Entering the Password<br/>
+filled details and clicking on submit<br/>
+Asserting that SR Status list is available or not<br/>
+Verifying SR Status list Data <br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.spire.acqura2.test.accenture.home.homeTestPlan@458ad742</td></tr>
+</table><p>
+</body>
+</html>

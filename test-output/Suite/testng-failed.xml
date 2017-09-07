@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="customerName" value="Accenture US"/>
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.spire.scripts.BugReport2">
+        <methods>
+          <include name="bugReportDownload" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.spire.scripts.BugReport2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

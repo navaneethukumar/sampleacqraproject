@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Acqura2.0 Automation Suite]" parallel="tests">
+  <parameter name="instance" value="ACCENTURE"/>
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="healthCheck" value="false"/>
+  <parameter name="host" value="http://192.168.2.6:3000/"/>
+  <test name="Home Page Test Cases(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="searchBySkillandExperienceCombination"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan">
+        <methods>
+          <include name="afterTestMethod"/>
+          <include name="afterTestSuite"/>
+          <include name="searchBySkillandExperienceCombination" invocation-numbers="0"/>
+          <include name="beforeTestSuite"/>
+          <include name="setUp"/>
+          <include name="beforeTest"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+          <include name="_takeScreenShotOnFailure"/>
+        </methods>
+      </class> <!-- com.spire.acqura2.test.accentureNA.advancedSearch.AdvancedSearchTestPlan -->
+    </classes>
+  </test> <!-- Home Page Test Cases(failed) -->
+</suite> <!-- Failed suite [Acqura2.0 Automation Suite] -->

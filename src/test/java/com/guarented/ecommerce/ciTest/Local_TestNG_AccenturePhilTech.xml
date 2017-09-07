@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Automation-Regression-Report" parallel="tests"
+	thread-count="2">
+
+	<listeners>
+	
+	<!--<listener class-name="com.spire.base.reporter.SpireReport"/>
+	<listener class-name="com.spire.base.reporter.SpireEmailReport"/>-->
+	
+	<listener class-name="com.spire.acqura2.report.SpireReport"/>
+	<listener class-name="com.spire.acqura2.report.SpireEmailReport"/>
+	<listener class-name="com.spire.base.controller.TestRetryListener"/>
+	<listener class-name="com.spire.acqura2.report.SpireReportChart"/>
+	
+	</listeners>
+	
+	
+	<!-- <parameter name="host" value="http://192.168.2.198:9280/generic-ui/src/app/index.html#/?realm=realm23"/> 
+	<parameter name="host" value="http://192.168.2.198:9130/generic-ui/src/app/index.html#/"/>
+	<parameter name="host" value="http://192.168.2.198:9280/generic-ui/src/app/index.html#/"/>
+    <parameter name="userId" value="admin@autogi.com"/>
+    <parameter name="password" value="test@123"/>-->
+    
+    <!-- <parameter name="host" value="https://phil-tech.spire2grow.com/"/>
+    <parameter name="userId" value="recruiter@accphiltechuat.com"/>
+    <parameter name="password" value="dIETKEtY"/> -->
+    
+    <parameter name="host" value="http://accenturphltechstage.spire2grow.com" />
+    <parameter name="userId" value="admin@autogi.com" />
+    <parameter name="password" value="test@123" />
+    
+    
+	<!--instance names Accenture,CTS -->
+	<!--<parameter name="instance" value="AccentureNA" />-->
+	<parameter name="client" value="AccenturePhilTech" />
+	<!--browser values of *Firefox,Chrome,IE -->
+	<parameter name="browser" value="Chrome" />
+	<parameter name="healthCheck" value="false" />
+	
+	<test name="Accenture-Login-TestPlan">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>			
+			<package name="com.spire.acqura2.test.login" />			
+		</packages>
+	</test>
+	
+	<test name="Accenture-Home Page-TestPlan">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>	
+			<package name="com.spire.acqura2.test.homePage" />			  
+		</packages>
+	</test>
+	
+	<test name="Accenture-Universal Serach-TestPlan">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>
+		    <package name="com.spire.acqura2.test.universalSearch" /> 
+		</packages>
+	</test> 
+	
+	<test name="Accenture-Advance Search-TestPlan">
+		<groups>
+			<run>
+			
+			<include name="validateExperienceRangeSearch" />
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>		  
+			<package name="com.spire.acqura2.test.advancedSearch" />		   
+		</packages>
+	</test>	
+		
+	<test name="Accenture-Candidate List View-TestPlan">
+		<groups>
+			<run>
+			<include name="testsourcenameinCandidateListView" />
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>	
+			<package name="com.spire.acqura2.test.candidateListView" />
+		</packages>
+	</test>
+	
+	<test name="Accenture-Candidate Profile Page-TestPlan">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>			
+			<package name="com.spire.acqura2.test.CandidateProfilePage" />			  
+		</packages>
+	</test>
+	
+	<test name="Accenture-Manage Save Search-TestPlan">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>	
+			<package name="com.spire.acqura2.test.manageSaveSearch" />			  
+		</packages>
+	</test>
+	
+	<test name="Accenture-Candidate User Feedback-TestPlan">
+		<groups>
+			<run>
+			    <include name="Sanity" />
+	            <include name="sanity" />
+			</run>
+		</groups>
+		<packages>	
+			<package name="com.spire.acqura2.test.CandidateUserFeedback" />			  
+		</packages>
+	</test> 
+	
+		
+</suite>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Acqura2.0 Automation Suite" parallel="tests"
+	thread-count="1">
+	<listeners>
+	 <!--<listener class-name="com.spire.base.reporter.SpireReport"/>
+			<listener class-name="com.spire.base.controller.TestRetryListener"/>-->
+	</listeners> 
+	
+	<!--instance names host -->
+	<parameter name="host" value="http://192.168.2.4:3000/" />
+	<!--instance names Accenture,CTS -->  
+	<parameter name="instance" value="ACCENTURE" />   
+	<!--browser values of *Firefox,Chrome,IE -->  
+	<parameter name="browser" value="Chrome" />
+	<parameter name="healthCheck" value="false" />
+
+	<!-- <parameter name="testRetryCount" value="4" /> -->
+	
+	<test name="Home Page Test Cases">
+		<groups>
+			<run>
+				
+				<include name="sanity" />
+			</run>
+			
+		</groups>
+		<packages>
+			<package name="com.spire.application.check" />    
+		</packages>
+	</test>
+</suite>   

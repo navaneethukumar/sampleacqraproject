@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<suite name="Automation-Regression-Report" parallel="tests"
+	thread-count="1">
+
+	<listeners>
+	
+	<!--<listener class-name="com.spire.base.reporter.SpireReport"/>
+	<listener class-name="com.spire.base.reporter.SpireEmailReport"/>-->
+	
+	<!--<listener class-name="com.spire.acqura2.report.SpireReport"/>
+	<listener class-name="com.spire.acqura2.report.SpireEmailReport"/>
+	<listener class-name="com.spire.base.controller.TestRetryListener"/>
+	<listener class-name="com.spire.acqura2.report.SpireReportChart"/>-->
+	
+	</listeners>
+
+	<parameter name="client" value="AccentureNA" />	
+	<parameter name="host" value="http://192.168.2.198:9190/generic-ui/src/app/index.html" />
+	<parameter name="userId" value="recruiter1@accentnaqe.com" />
+	<parameter name="password" value="spire@123" />
+	
+	<!--<parameter name="client" value="AccentureIDC" />	
+	<parameter name="host" value="http://192.168.2.198:8190/generic-ui/src/app/index.html" />
+	<parameter name="userId" value="admin@accenturephiltec.com" />
+	<parameter name="password" value="accenture@123" />-->
+	
+	
+	<!--instance names Accenture,CTS -->
+	<parameter name="instance" value="AccentureNA" />
+	<!--browser values of *Firefox,Chrome,IE -->
+	<parameter name="browser" value="Chrome" />
+	<parameter name="healthCheck" value="false" />
+	
+	<test name="Accenture-SMOKE-TestPlan">
+		<groups>
+			<run>
+			
+		<!--	<include name="validateManageSaveSearchPage" />
+				<include name="verifyAllFieldsInManageSaveSearchPage" />
+				<include name="verifyCreateSaveSearch" />
+				<include name="validateSaveSearchListing" />
+				<include name="verifyExecuteSaveSearch" />-->
+				<include name="verifyDuplicacyInSaveSearchName" />
+			<include name="verifyEditSaveSearchName" />
+				<include name="verifyShareSaveSearch" />
+				<include name="verifyDeleteSaveSearch" />
+				<include name="verifySearchInSaveSearch" />
+				<include name="verifyPaginationOnSaveSearch" />
+				<include name="verifySortOnModifiedOnSaveSearch" />
+				
+				<
+				
+			</run>
+		</groups>
+		<packages>
+		   <package name="com.spire.acqura2.test.manageSaveSearch" />
+			<!--<package name="com.spire.acqura2.test.accenture.home" />
+			<package name="com.spire.acqura2.test.accenture.candidateListView" />-->
+			
+		</packages>
+	</test>
+	
+	
+		
+</suite>

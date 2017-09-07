@@ -1,0 +1,4 @@
+SpireTestObject.testCaseId,SpireTestObject.TestTitle,User.role
+1,validateLoginPageScreen,recruiter
+2,validateLogin,recruiter
+3,validateLogout,recruiter
